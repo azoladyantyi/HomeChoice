@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeChoice.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Gray" Padding="24" CornerRadius="0">
+            <Label Text="HomeChoice #datafree" HorizontalTextAlignment="Start" TextColor="White" FontSize="20"/>
+        </Frame>
+        <Grid RowSpacing="0"
+          ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.Column="0" Color="#DCDCDC" />
+            <Button Text="HC"
+                    TextColor="DeepPink"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+            <BoxView Grid.Column="1"
+                 Color="#DCDCDC" />
+            <Button Grid.Column="1"
+               Text="Sgn in"
+               HorizontalOptions="End"
+               VerticalOptions="Start" />
+
+            <BoxView Grid.Column="2"
+                 Color="#DCDCDC" />
+            <Button Grid.Column="2"
+               Text="Basket"
+               HorizontalOptions="End"
+               VerticalOptions="Start" />
+
+            <BoxView Grid.Column="3"
+                 Color="#DCDCDC" />
+            <Button Grid.Column="3"
+               Text="Menu"
+               HorizontalOptions="End"
+               VerticalOptions="Start" />
+
+        </Grid>
+
+        <SearchBar Placeholder="Search items..."
+           CancelButtonColor="Orange"
+           PlaceholderColor="HotPink"
+           TextColor="Gray"
+           HorizontalTextAlignment="Center"
+           FontSize="Medium"
+           FontAttributes="Italic" />
+        <Grid RowSpacing="0"
+          ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <BoxView Grid.Column="0"
+                 Color="#DCDCDC" />
+            <Button Grid.Column="0"
+               Text="CONGRATULATIONS!"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+        </Grid>
+
+        <Label Text="Already signed up online" FontSize="Title" Padding="30,10,30,10"/>
+        <Button Text="Log in with with your phone number" FontSize="10" Padding="30,0,30,0" BackgroundColor="DeepPink"/>
+        <Button Text="Log in with with your email address" FontSize="10" Padding="30,0,30,0" BackgroundColor="DeepPink"/>
+        <Label FontSize="16" Padding="30,24,30,0" BackgroundColor="Navy">
+            <Label.FormattedText  >
+                <FormattedString >
+                    <FormattedString.Spans>
+                        <Span Text="Follow us on:" FontAttributes="Bold" TextColor="White" FontSize="Medium"/>
+                        <Span Text="Twitter Facebook Instagram" FontAttributes="Bold" TextColor="White" FontSize="Medium"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Picker x:Name="Companyu"
+        Title="Our Company"
+        TitleColor="Red">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Wor at HomeChoice</x:String>
+                    <x:String>Become a sales aget</x:String>
+                    <x:String>Loans from FinChoice</x:String>
+                    <x:String>Homechoice Recipe Book</x:String>
+                    <x:String>Homechoice Blogs</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+    </StackLayout>
+
+</ContentPage>
